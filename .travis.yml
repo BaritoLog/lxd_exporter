@@ -2,6 +2,8 @@ language: go
 go:
   - "1.10"
 
+before_script:
+  - umask 022
 script:
   - GOOS=linux GOARCH=amd64 go build -o lxd_exporter.linux-amd64/lxd_exporter
 
