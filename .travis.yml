@@ -3,16 +3,16 @@ go:
   - "1.10"
 
 script:
-  - GOOS=linux GOARCH=amd64 go build -o lxd-exporter
+  - GOOS=linux GOARCH=amd64 go build -o lxd_exporter.linux-amd64/lxd_exporter
 
 before_deploy:
-  - tar -zcf lxd-exporter-linux-amd64.tar.gz lxd-exporter
+  - tar -zcf lxd_exporter.linux-amd64.tar.gz lxd_exporter.linux-amd64
 deploy:
   provider: releases
   skip_cleanup: true
   api_key: $GITHUB_TOKEN
   file:
-    - lxd-exporter-linux-amd64.tar.gz
+    - lxd_exporter.linux-amd64.tar.gz
   on:
     repo: BaritoLog/lxd_exporter
     tags: true
