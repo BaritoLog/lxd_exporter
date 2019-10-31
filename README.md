@@ -1,13 +1,12 @@
 # lxd_exporter
 
-[![Build Status](https://travis-ci.org/nieltg/lxd_exporter.svg?branch=master)](https://travis-ci.org/nieltg/lxd_exporter)
-[![Go Report Card](https://goreportcard.com/badge/github.com/nieltg/lxd_exporter)](https://goreportcard.com/report/github.com/nieltg/lxd_exporter)
+[![Build Status](https://travis-ci.org/BaritoLog/lxd_exporter.svg?branch=master)](https://travis-ci.org/BaritoLog/lxd_exporter)
 
 LXD metrics exporter for Prometheus. Improved version of [viveksing/lxdexporter_golang](https://github.com/viveksing/lxdexporter_golang).
 
 ## Usage
 
-Download latest precompiled binary of this exporter from [the release page](https://github.com/nieltg/lxd_exporter/releases).
+Download latest precompiled binary of this exporter from [the release page](https://github.com/BaritoLog/lxd_exporter/releases).
 
 Extract archive, then run the exporter:
 ```
